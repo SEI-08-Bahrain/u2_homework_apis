@@ -22,7 +22,7 @@ Create an Express.js web application that integrates with an external API, utili
    - Display the information in a user-friendly and aesthetically pleasing manner.
 
 5. **Dynamic Content:**
-   - Ensure that your application dynamically updates the views based on the information retrieved from the API. Use asynchronous JavaScript to handle data fetching.
+   - Ensure that your application dynamically updates the views based on the information retrieved from the API. 
 
 6. **Error Handling:**
    - Implement proper error handling for both API requests and any other potential issues that may arise during development.
