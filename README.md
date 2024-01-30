@@ -1,4 +1,4 @@
-# Build and Express App with External API Integration
+# Build an Express App with External API Integration
 
 <img src="https://i.imgur.com/e5ghIeo.png" width="70%" />
  
