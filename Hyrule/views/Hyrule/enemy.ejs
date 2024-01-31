@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <title>Random Enemy</title>
+</head>
+<body>
+  <div class="text-center">
+    <h2>Enemy to fight</h2>
+    <h4>
+    <%=enemy.name%></h4>
+    <img src="<%=enemy.image%>">
+    <h4><%=enemy.description%></h4>
+    <h4>Common Locations:</h4>
+    <ul style="list-style:none;">
+      <%enemy.common_locations.forEach((elem)=>{%>
+        <li>
+          <%=elem%>
+        </li>
+        <%})%>
+    </ul>
+    <h4>Drops:</h4>
+    <ul style="list-style:none;">
+      <%enemy.drops.forEach((elem)=>{%>
+        <li>
+          <%=elem%>
+        </li>
+        <%})%>
+    </ul>
+    <button class="btn btn-outline-success" onclick="window.location.href='/Hyrule';">Home</button>
+  </div>
+
+  
+</body>
+</html>
