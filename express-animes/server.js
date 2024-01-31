@@ -16,12 +16,22 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 app.get('/', async (req, res) => {
-  const animePatUrl = 'https://api.waifu.pics/sfw/pat';
-
   try {
-    const response = await axios.get(animePatUrl);
-    const animePat = response.data;
-    res.render("index", { animePat });
+    const numberOfImages = 3; // Set the desired number of images
+
+    // Array to store multiple anime facts
+    const animePatsArray = [];
+
+    for (let i = 0; i < numberOfImages; i++) {
+      const response = await axios.get('https://api.waifu.pics/sfw/pat');
+      const animePat = response.data;
+
+      animePatsArray.push(animePat);
+    }
+
+    console.log('Anime Pats Array:', animePatsArray);
+
+    res.render('index', { animePatsArray });
   } catch (error) {
     console.error('Error fetching anime facts:', error.response.data);
     res.status(500).send('Error fetching anime facts');
