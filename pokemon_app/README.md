@@ -1,4 +1,4 @@
-# **_Pokimon List_**
+# **_Pokemon List_**
 
 ---
 
