@@ -15,19 +15,19 @@ const axios = require('axios');
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
-pp.get('/', async (req, res) => {
-  const animeFactsUrl = 'https://catfact.ninja/facts';
+app.get('/', async (req, res) => {
+  const animePatUrl = 'https://api.waifu.pics/sfw/pat';
 
   try {
-    const response = await axios.get(animeFactsUrl);
-    const animeFacts = response.data.data;
-
-    res.render("index", {animeFacts})
+    const response = await axios.get(animePatUrl);
+    const animePat = response.data;
+    res.render("index", { animePat });
   } catch (error) {
-    console.error('Error fetching anime facts:', error);
+    console.error('Error fetching anime facts:', error.response.data);
     res.status(500).send('Error fetching anime facts');
   }
 });
+
 
 app.use(logger('dev'));
 app.use(express.json());
