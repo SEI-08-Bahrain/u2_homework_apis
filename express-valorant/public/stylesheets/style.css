@@ -1,0 +1,33 @@
+body {
+  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+  text-align: center;
+  padding: 30px;
+  background-color: rgb(21, 4, 4);
+}
+h1 {
+  color: white;
+  margin: 40px;
+}
+a {
+  color: #00b7ff;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  border: 2px solid black;
+  border-radius: 10%;
+  background-color: rgb(245, 223, 219);
+  margin: 5px 25%;
+  color: rgb(2, 24, 17);
+}
+.agent-image {
+  grid-column: 1 / 2;
+}
+.agent-description {
+  grid-column: 2 / 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 100px;
+  font-size: 20px;
+}

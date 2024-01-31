@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>VALORANT AGENTS</h1>
+  <%agentsInfo.forEach(agent => {%>
+    <div class="container">
+    <div class="agent-image">
+    <img src="<%=agent.bustPortrait%>" width="500px"></div>
+    <div class="agent-description">
+      <div class = "agent-name">
+      <b>Agent: </b> <%=agent.displayName%></div>
+      <div class = "agent-role">
+      <b>Role: </b> <%=agent.role.displayName%></div>
+      <div class = "agent-background">
+      <b>Description:</b> <%=agent.description%></div>
+    </div>
+  </div>
+  <%})%>
+ 
+</body>
+</html>
