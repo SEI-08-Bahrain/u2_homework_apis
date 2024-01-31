@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valorant Maps</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>≽^•⩊•^≼ Valorant Maps ≽^•⩊•^≼</h1>
+  <div>
+    <h2>All Valorant maps:</h2>
+    <% maps.forEach(map => { %>
+      <p> <%= map.displayName %></p> <br>
+      <img src="<%= map.displayIcon %>" alt="">
+    <% }); %>
+  </div>
+</body>
+</html>
