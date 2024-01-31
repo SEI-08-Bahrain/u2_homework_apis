@@ -7,30 +7,32 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      height: 100%;
       background-color: beige;
     }
     ul {
       display: flex;
+      flex-direction: column;
       justify-content: center;
       gap: 5vh;
       flex-wrap: wrap;
     }
     li {
+      width: 70vh;
       list-style-type: none;
-      font-size: 5vh;
+      font-size: 4vh;
     }
   </style>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pokemon</title>
+  <title>abilities</title>
 </head>
 <body>
-  <h1>Pokemons</h1>
   <ul>
-    <% pokemons.forEach(pokemon => { %>
+    <% abilities.forEach(abilitieObj => { %>
       <li>
-        <a href="/abilities/<%=pokemon.name%>"><%= pokemon.name %></a>
+        <h4><%= abilitieObj.name %></h4>
+        <p><%= abilitieObj.abilityEffect %></p>
       </li>
       
     <% }); %>

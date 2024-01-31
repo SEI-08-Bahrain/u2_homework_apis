@@ -5,4 +5,9 @@ const index = async (req, res) => {
   res.render('pokemons/index', { pokemons })
 }
 
-module.exports = { index }
+const getAbilities = async (req, res) => {
+  const abilities = await Pokemon.abilities(req.params.name)
+  res.render('pokemons/abilities', { abilities })
+}
+
+module.exports = { index, getAbilities }
