@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+
+</head>
+<body>
+
+  <div class="container customCont">
+
+    <div class="left-box">
+      <img src="<%= oneProduct.image %>" alt="img">
+    </div>
+
+    <div class="right-box">
+      <h2><%= oneProduct.title %></h2>
+      <h3 class="price">Price: <%= oneProduct.price %></h3>
+      <h4 class="description">Description: <%= oneProduct.description %></h4>
+    </div>
+
+  </div>
+
+</body>
+</html>

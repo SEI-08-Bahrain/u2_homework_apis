@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Category</title>
+        <link rel='stylesheet' href='/stylesheets/style.css' />
+    </head>
+    <body>
+        <h1>Categories</h1>
+
+        <div class="container">
+          <% categoryArray.forEach( category => { %>
+          <div class="box">
+            <a id="cat" href="/products/Categories/<%= category %>"><%= category%></a>
+          </div>
+          <% }); %>
+        </div>
+
+    </body>
+  <html>

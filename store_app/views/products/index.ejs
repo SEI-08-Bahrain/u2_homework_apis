@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Products</title>
+        <link rel='stylesheet' href='/stylesheets/style.css' />
+    </head>
+    <body>
+        <h1>Products</h1>
+
+        <div class="container">
+          <% productArray.forEach( product => { %>
+          <div class="box prodBoxes">
+            <img src="<%= product.image %>" alt="img">
+            <a id="prod" href="/products/<%= product.id %>"><%= product.title %></a>
+          </div>
+          <% }); %>
+        </div>
+
+    </body>
+  <html>
