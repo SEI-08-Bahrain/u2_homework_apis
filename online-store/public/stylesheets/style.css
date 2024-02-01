@@ -1,0 +1,35 @@
+body {
+  padding: 50px;
+  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00b7ff;
+}
+
+h1 {
+  text-align: center;
+}
+
+main {
+  width: 100%;
+  margin: 0 auto;
+}
+
+button {
+  padding: 10px;
+}
+
+form > button {
+  font-size: 20px;
+}
+
+#categories {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+#productSection {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}

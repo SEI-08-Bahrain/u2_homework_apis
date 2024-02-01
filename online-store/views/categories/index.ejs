@@ -1,0 +1,14 @@
+<%- include('../partials/header') %>
+
+<main>
+  <h3>Categories</h3>
+  <section id="categories">
+    <% categories.forEach(category => { %>
+      <form action="/products/category/<%= category %>" method="GET">
+        <button id="<%= category %>" type="submit"><%= category %></button>
+      </form>
+    <% }); %>
+  </section>
+</main>
+
+<%- include('../partials/footer') %>  
