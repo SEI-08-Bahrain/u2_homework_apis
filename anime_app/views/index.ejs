@@ -1,0 +1,28 @@
+<!-- views/index.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Duck Pics</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+    }
+
+    .pic-container {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>≽^•⩊•^≼ DUCKIE THE DUCK ≽^•⩊•^≼</h1>
+  
+  <!-- Display Duck Pics -->
+  <div class="pic-container">
+    <h2>Random Cute Duck:</h2>
+    <img src="<%= duckPic %>" />
+  </div>
+</body>
+</html>
